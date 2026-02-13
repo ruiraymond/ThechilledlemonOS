@@ -53,7 +53,10 @@ chroot "${ROOTFS_DIR}" /bin/bash -c '
     ca-certificates \
     locales \
     curl \
-    vim
+    vim \
+    initramfs-tools \
+    live-boot \
+    live-config
 
   echo "en_US.UTF-8 UTF-8" > /etc/locale.gen
   locale-gen
